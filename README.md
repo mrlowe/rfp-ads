@@ -11,8 +11,10 @@ reference the rfp scripts as follows:
 
 Make sure this reference comes after your jQuery script reference.
 
-If you want to change the default values, then omit the `rfpDefaults.js` script
-and initialize `rfpAdverisements` in `$(document).ready()` as follows:
+## Customizing
+
+If you want to change the default values, then **omit** the `rfpDefaults.js` script
+and initialize `rfpAdvertisements` in `$(document).ready()` as follows:
 
     $(document).ready( function() {
         $(document).rfpAdvertisements({
@@ -34,4 +36,5 @@ The month term that should appear in the ad. Allowed values are 12 and 24. Defau
 The url that should be shown when the user clicks the ad. By default, clicking will just hide the ad.
 
 #### hideDays
-The number of days before the advertisement should be shown again. Default is 7. A hideDays value of less than one will clear the current cookie.
+The number of days before the advertisement should be shown again. Default is 7.
+A hideDays value of less than one will clear the current cookie.
