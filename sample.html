@@ -6,12 +6,14 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/mrlowe/rfp_ads/master/rfpAdvertisements.js"></script>
+  <script src="https://cdn.rawgit.com/mrlowe/rfp-ads/master/rfpAdvertisements.js"></script>
+  <script>
   $(document).ready( function() {
     $(document).rfpAdvertisements({
       term: 24,
-      hideDays: 7
+      hideDays: 7,
+      destination: 'https://literateprogrammer.com'
     });
   });
-</script>
+  </script>
 </body>
