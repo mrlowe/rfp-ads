@@ -4,13 +4,15 @@ RFP Ads jQuery Plugin
 
 This plugin makes it easy for RFP dealers to serve an advertisement for
 funding with First Financial bank. On pages where you want the ad to appear,
-reference the script as follows:
+reference the rfp scripts as follows:
 
     <script src="https://cdn.rawgit.com/mrlowe/rfp-ads/master/rfpAdvertisements.js"></script>
+    <script src="https://cdn.rawgit.com/mrlowe/rfp-ads/master/rfpUseDefaults.js"></script>
 
 Make sure this reference comes after your jQuery script reference.
 
-Then initialize `rfpAdverisements` in `$(document).ready()` as follows:
+If you want to change the default values, then omit the `rfpDefaults.js` script
+and initialize `rfpAdverisements` in `$(document).ready()` as follows:
 
     $(document).ready( function() {
         $(document).rfpAdvertisements({
