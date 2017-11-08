@@ -83,8 +83,8 @@
         term: 12,
         hideDays: 7,
         destination: '',
-        image12: 'images/rfp12.jpg',
-        image24: 'images/rfp24.jpg',
+        image12: 'https://rawgit.com/mrlowe/rfp-ads/images/rfp12.jpg',
+        image24: 'https://rawgit.com/mrlowe/rfp-ads/images/rfp24.jpg',
         cookieName: 'rfp-advertisements'
     };
 
