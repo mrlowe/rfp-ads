@@ -2,6 +2,6 @@
  * RFP Ads jQuery Plugin: initialize with defaults
  */
 
-$(document).ready( function() {
-    $(document).rfpAdvertisements();
+jQuery(document).ready( function() {
+    jQuery(document).rfpAdvertisements();
 });
