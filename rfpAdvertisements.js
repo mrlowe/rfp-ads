@@ -110,8 +110,8 @@
         destination: '',
         image12: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
         image24: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
-        imageCancelBar: 'images/cancel-bar.png',
-        imageCancel: 'images/cancel.png',
+        imageCancelBar: 'https://rawgit.com/mrlowe/rfp-ads/master/images/cancel-bar.png',
+        imageCancel: 'https://rawgit.com/mrlowe/rfp-ads/master/images/cancel.png',
         cookieName: 'rfp-advertisements'
     };
 
