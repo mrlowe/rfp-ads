@@ -75,6 +75,31 @@
             'display': 'block',
             'max-width': '100%'
         }));
+        $('#rfp-ad-container').append($("<div id='rfp-cancel-container'></div>").css({
+          'display': 'block',
+          'position': 'absolute',
+          'margin': '200px auto',
+          'top': 0,
+          'max-width': '1200px',
+          'height': 'auto'
+        }));
+        $('#rfp-cancel-container').append($("<img src='" + settings.imageCancelBar + "'/>").css({
+          'display': 'block',
+          'max-width': '100%'
+        }));
+        $('#rfp-cancel-container').append($("<img src='" + settings.imageCancel + "'/>").css({
+          'display': 'block',
+          'position': 'absolute',
+          'top': 0,
+          'right': 0,
+          'height': '100%',
+          'color': 'white'
+        }).click(function (event) {
+          if (settings.destination) {
+              event.stopPropagation();
+              $('#rfp-overlay').hide();
+          }
+        }));
 
         return this;
     };
@@ -85,6 +110,8 @@
         destination: '',
         image12: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
         image24: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
+        imageCancelBar: 'images/cancel-bar.png',
+        imageCancel: 'images/cancel.png',
         cookieName: 'rfp-advertisements'
     };
 
