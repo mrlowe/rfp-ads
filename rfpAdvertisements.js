@@ -106,7 +106,7 @@
 
     $.fn.rfpAdvertisements.defaults = {
         term: 12,
-        hideDays: 7,
+        hideDays: 0,
         destination: '',
         image12: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
         image24: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
