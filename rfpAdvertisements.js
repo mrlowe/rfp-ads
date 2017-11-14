@@ -60,11 +60,10 @@
             $('#rfp-overlay').hide();
         }).append($("<div id='rfp-ad-container'></div>")
             .css({
-                'display': 'block',
-                'margin': '200px auto',
-                'max-width': '1200px',
-                'height': 'auto',
-                'background': 'white'
+              'position': 'relative',
+              'top': '200px',
+              'max-width': '1200px',
+              'margin': '0px auto'
             }));
         $('#rfp-ad-container').click(function (event) {
             if (settings.destination) {
@@ -75,25 +74,12 @@
             'display': 'block',
             'max-width': '100%'
         }));
-        $('#rfp-ad-container').append($("<div id='rfp-cancel-container'></div>").css({
-          'display': 'block',
+        $('#rfp-ad-container').append($("<img src='" + settings.imageCancel + "'/>").css({
           'position': 'absolute',
-          'margin': '200px auto',
-          'top': 0,
-          'max-width': '1200px',
-          'height': 'auto'
-        }));
-        $('#rfp-cancel-container').append($("<img src='" + settings.imageCancelBar + "'/>").css({
-          'display': 'block',
-          'max-width': '100%'
-        }));
-        $('#rfp-cancel-container').append($("<img src='" + settings.imageCancel + "'/>").css({
-          'display': 'block',
-          'position': 'absolute',
-          'top': 0,
-          'right': 0,
-          'height': '100%',
-          'color': 'white'
+          'top': '0px',
+          'right': '0px',
+          'width':  '6%',
+          'display': 'block'
         }).click(function (event) {
           if (settings.destination) {
               event.stopPropagation();
@@ -108,10 +94,9 @@
         term: 12,
         hideDays: 0,
         destination: '',
-        image12: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
-        image24: 'https://rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
-        imageCancelBar: 'https://rawgit.com/mrlowe/rfp-ads/master/images/cancel-bar.png',
-        imageCancel: 'https://rawgit.com/mrlowe/rfp-ads/master/images/cancel.png',
+        image12: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
+        image24: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
+        imageCancel: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/cancel.png',
         cookieName: 'rfp-advertisements'
     };
 
