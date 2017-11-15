@@ -38,3 +38,6 @@ The url that should be shown when the user clicks the ad. By default, clicking w
 #### hideDays
 The number of days before the advertisement should be shown again. Default is 7.
 A hideDays value of less than one will clear the current cookie.
+
+## Contact Us
+If you need help with this plugin, please contact us at (325) 627-7273 or rfpcustomerservice@ffin.com.
