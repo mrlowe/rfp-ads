@@ -4,6 +4,23 @@
 
 (function ( $ ) {
 
+    // retrieve the file root so that other assets are loaded relative
+    // to this script.
+    function getFileRoot()
+    {
+        var r = '';
+        var scripts = document.getElementsByTagName('script');
+        if (scripts) {
+            r = scripts[scripts.length-1].src;
+            r = r.split('/');
+            if (r) {
+                r = r.slice(0,r.length-1).join('/') + '/';
+            }
+        }
+        return r;
+    }
+    var FILE_ROOT = getFileRoot();
+
     function createCookie(name,value,days) {
         var expires = "";
         if (days) {
@@ -94,9 +111,9 @@
         term: 12,
         hideDays: 0,
         destination: '',
-        image12: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/rfp12.jpg',
-        image24: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/rfp24.jpg',
-        imageCancel: 'https://cdn.rawgit.com/mrlowe/rfp-ads/master/images/cancel.png',
+        image12: FILE_ROOT + 'images/rfp12.jpg',
+        image24: FILE_ROOT + 'images/rfp24.jpg',
+        imageCancel: FILE_ROOT + 'images/cancel.png',
         cookieName: 'rfp-advertisements'
     };
 
