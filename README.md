@@ -40,4 +40,4 @@ The number of days before the advertisement should be shown again. Default is 7.
 A hideDays value of less than one will clear the current cookie.
 
 ## Contact Us
-If you need help with this plugin, please contact us at (325) 627-7273 or rfpcustomerservice@ffin.com.
+If you need help with this plugin, please contact us at (325) 627-7273 or rfpcustomerservice@ffin.com. You can find [a full list of financing options here](https://mrlowe.github.io/rfp-ads/).
